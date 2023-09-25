@@ -8,9 +8,9 @@ def shift_letters(alphabet, letter, shift)
 end
 
 def caesar_cipher(string, shift)
-  string_arr = string.split("")
-  lowcase_alphabet = ("a".."z").to_a
-  upcase_alphabet = ("A".."Z").to_a
+  string_arr = string.split('')
+  lowcase_alphabet = ('a'..'z').to_a
+  upcase_alphabet = ('A'..'Z').to_a
 
   encrypted_arr = string_arr.map do |letter|
     if lowcase_alphabet.include?(letter)
@@ -23,4 +23,4 @@ def caesar_cipher(string, shift)
   end
   encrypted_arr.join
 end
-puts caesar_cipher("What a string!", 5)
+puts caesar_cipher('What a string!', 5)
